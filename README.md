@@ -10,11 +10,13 @@ npm run db:migrate
 npm run start-dev
 ```
 
+See Postman folder for API docs
+
 ## Technical Choices Made
+- TypeScript - various reasons, mainly type checking and better domain modelling
+- MySQL - familarity, and simplicity for this use case
+- No ORM - simplicity for this use case, would have gone with Moongoose if I had choosen MongoDB
 
-TypeScript - various reasons, mainly type checking and better domain modelling
-MySQL - familarity, and simplicity for this use case
-No ORM - simplicity for this use case, would have gone with Moongoose if I had choosen MongoDB
-
-Todo
-Handle foreign key failures and deletes organisations which are parents
+### Todo
+- Handle foreign key failures and deletes organisations which are parents
+- Improve separation of layers
